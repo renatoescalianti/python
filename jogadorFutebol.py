@@ -25,7 +25,7 @@ for p in range(0,jogador['partidas']) :
     jogador['total'] += gol
     jogador['gols'].append(gol)
 '''
-# com o uso do código acima, poderia ser suprimida as linhas 24 a 28
+# com o uso do código acima, poderia ser suprimida as linhas 25 a 28
 
 # foi feito um segundo FOR LOOP com o fim de estudar as estruturas de variáveis compostas e repetições
 total = 0
@@ -33,7 +33,10 @@ for g in jogador['gols'] :
     total += g
 jogador['total'] = total
 
-print(f'O jogador {jogador["nome"]} jogo {jogador["partidas"]} partidas.')
+# poderia também ter-se feito:
+#jogador['total'] = sum(jogador['gols'])
+
+print(f'O jogador {jogador["nome"]} jogou {jogador["partidas"]} partidas.')
 print(f'Durante referidas partidas, fez o total de {jogador["total"]} gols:')
 
 # como c = 0 é inicial, pode ser suprimido do código em Python
